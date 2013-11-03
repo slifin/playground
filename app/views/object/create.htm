@@ -4,8 +4,9 @@ Create a new Object
 	<div class="object-title">Title <input type="text"></div> 
 	<div class="object-attributes" ng-controller="object_definers">
 		<ul>
-		<li ng-repeat="thing in things">{{@ng('thing.text')}}</li>
+			<li ng-repeat="thing in things">{{@ng('thing.text')}}</li>
 		</ul>
+		<input type="button" value="add attribute" ng-click="addAttribute()"> 
 	</div>
 
 	<input type="submit" value="submit">
