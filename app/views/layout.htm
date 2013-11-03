@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<base href="{{ @SCHEME.'://'.@HOST.@BASE.'/'.@UI }}" />
+	<meta charset="{{@ENCODING}}" />
+	<title>{{@title}}</title>
+	<include if="{{@head}}" href="{{@head}}" />
+</head>
+<body>
+	<include if="{{@nav}}" href="{{@nav}}" />
+	<include if="{{@body}}" href="{{@body}}" />
+	<include if="{{@foot}}" href="{{@foot}}" />
+</body>
+</html>
